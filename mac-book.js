@@ -55,7 +55,8 @@ const promoButton = document.getElementById('promo-code-btn')
 const totalPrice = document.getElementById('total-price');
 promoButton.addEventListener('click', function(){
     const discountAmount = parseInt(finalTotal.innerText) * .20;
-    if(promoCodeInput.value == "abc"){
+    const code = 'stevekaku';
+    if(promoCodeInput.value == code){
         finalTotal.innerText = parseInt(totalPrice.innerText) - discountAmount;
         promoButton.setAttribute('disabled', true);
     }
