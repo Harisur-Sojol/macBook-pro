@@ -33,6 +33,7 @@ const extraMemoryCost = document.getElementById('memory-price')
 const extraDeliveryCost = document.getElementById('delivery-cost')
 
 const finalTotal = document.getElementById('after-discount')
+
 //calculate total price
 function updateTotal() {
     const memoryCost = Number(extraMemoryCost.innerText)
@@ -44,8 +45,9 @@ function updateTotal() {
     const allProductTotalPrice = memoryCost + deliveryCost + storageCost + bestPriceNUmber;
     totalPrice.innerText = allProductTotalPrice;
     finalTotal.innerText = allProductTotalPrice;
-    const finalTotalNumber = Number(finalTotal.innerText);; 
+    const finalTotalNumber = Number(finalTotal.innerText);
 }
+
 // handle promocode
 const promoCodeInput = document.getElementById("promo-code-input");
 const promoButton = document.getElementById('promo-code-btn')
